@@ -1,5 +1,7 @@
 # Imago 
 
+![v1.0 Screenshot](https://raw.githubusercontent.com/nolanbrown/Imago/master/Documentation/Screenshots/v1.0-UI.png)
+
 ## Introduction
 
 This project is named after the [Imago Camera](https://en.wikipedia.org/wiki/Imago_camera) created by Werner Kraus, which was created to capture images at the life size of a subject. 
