@@ -1,0 +1,1176 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B111517624BD621D009CA476 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6F8A124B3F3D5009D98C0 /* Cocoa.framework */; };
+		B111517724BD621D009CA476 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B177492524B0FAE4007103FB /* CoreMedia.framework */; };
+		B111517824BD621D009CA476 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10F711B24BD323C008276A7 /* CoreImage.framework */; };
+		B111517924BD621D009CA476 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B177492324B0FAE4007103FB /* CoreGraphics.framework */; };
+		B111517A24BD621D009CA476 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B177492124B0FAD1007103FB /* AVFoundation.framework */; };
+		B111517B24BD621D009CA476 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B177492424B0FAE4007103FB /* CoreVideo.framework */; };
+		B111517C24BD621D009CA476 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B177492624B0FAE5007103FB /* CoreMediaIO.framework */; };
+		B111519524BD6759009CA476 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111518B24BD6758009CA476 /* Device.swift */; };
+		B111519624BD6759009CA476 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111518D24BD6758009CA476 /* Stream.swift */; };
+		B111519724BD6759009CA476 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111518E24BD6758009CA476 /* Main.swift */; };
+		B111519924BD6759009CA476 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111519024BD6758009CA476 /* Plugin.swift */; };
+		B111519A24BD6759009CA476 /* PluginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111519124BD6758009CA476 /* PluginInterface.swift */; };
+		B111519B24BD6759009CA476 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111519224BD6758009CA476 /* Property.swift */; };
+		B111519D24BD6759009CA476 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111519424BD6758009CA476 /* Object.swift */; };
+		B1499C7724D1D9B300FC3557 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1499C7624D1D9B300FC3557 /* Stream.swift */; };
+		B15B113624CB61B6002703FF /* PubSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B113524CB61B6002703FF /* PubSub.swift */; };
+		B15B113724CB61B6002703FF /* PubSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B113524CB61B6002703FF /* PubSub.swift */; };
+		B17748B524B03497007103FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17748B424B03497007103FB /* AppDelegate.swift */; };
+		B17748B724B03497007103FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17748B624B03497007103FB /* ContentView.swift */; };
+		B17748B924B03498007103FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17748B824B03498007103FB /* Assets.xcassets */; };
+		B17748BC24B03498007103FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17748BB24B03498007103FB /* Preview Assets.xcassets */; };
+		B17748CB24B03498007103FB /* ImagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17748CA24B03498007103FB /* ImagoTests.swift */; };
+		B17748D624B03498007103FB /* ImagoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17748D524B03498007103FB /* ImagoUITests.swift */; };
+		B17748E724B03542007103FB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17748E424B03542007103FB /* Camera.swift */; };
+		B17748F224B039B2007103FB /* EDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17748F024B0390D007103FB /* EDSDK.framework */; };
+		B17748F324B039B2007103FB /* EDSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17748F024B0390D007103FB /* EDSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B18149F224B61F86004CD8A8 /* CanonCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18149F124B61F86004CD8A8 /* CanonCamera.swift */; };
+		B18149F924B67E6E004CD8A8 /* CanonCommandErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18149F824B67E6D004CD8A8 /* CanonCommandErrors.swift */; };
+		B18149FB24B68094004CD8A8 /* CanonCommandProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18149FA24B68094004CD8A8 /* CanonCommandProperty.swift */; };
+		B183883424DDC18E007981BB /* CameraFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183883324DDC18E007981BB /* CameraFilter.swift */; };
+		B183884624E1A829007981BB /* CVPixelBufferPool+Imago.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183884524E1A829007981BB /* CVPixelBufferPool+Imago.swift */; };
+		B183884724E1A82A007981BB /* CVPixelBufferPool+Imago.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183884524E1A829007981BB /* CVPixelBufferPool+Imago.swift */; };
+		B183884924E1B806007981BB /* TitlebarAccesory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183884824E1B806007981BB /* TitlebarAccesory.swift */; };
+		B183884C24E1B853007981BB /* CameraFilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183884B24E1B853007981BB /* CameraFilterMenu.swift */; };
+		B183884E24E1B8FB007981BB /* LivePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183884D24E1B8FB007981BB /* LivePreview.swift */; };
+		B183885324E1BC07007981BB /* CIImage+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183885224E1BC07007981BB /* CIImage+Filter.swift */; };
+		B183885524E1BD63007981BB /* CIImage+Imago.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0889224D1F75A0001B8E9 /* CIImage+Imago.swift */; };
+		B183885724E1C340007981BB /* CameraRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183885624E1C340007981BB /* CameraRow.swift */; };
+		B183885F24E30615007981BB /* libturbojpeg.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B183885E24E30614007981BB /* libturbojpeg.0.dylib */; };
+		B183886024E30615007981BB /* libturbojpeg.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B183885E24E30614007981BB /* libturbojpeg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B1B8AD0824C61953009470CA /* Frame+Decompress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5577724C53AE7009355F1 /* Frame+Decompress.swift */; };
+		B1B8AD0B24C61E9E009470CA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD0924C61E8F009470CA /* Const.swift */; };
+		B1B8AD0F24C620C6009470CA /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD0E24C620C6009470CA /* DLog.swift */; };
+		B1B8AD1024C620C6009470CA /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD0E24C620C6009470CA /* DLog.swift */; };
+		B1B8AD1324C621A4009470CA /* ImagoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD1124C621A4009470CA /* ImagoStream.swift */; };
+		B1B8AD1424C64416009470CA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD0924C61E8F009470CA /* Const.swift */; };
+		B1B8AD4B24C756AE009470CA /* CallerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD4A24C756AE009470CA /* CallerID.swift */; };
+		B1B8AD4C24C756AE009470CA /* CallerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AD4A24C756AE009470CA /* CallerID.swift */; };
+		B1C297A724CF870B0089C84D /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C297A624CF870B0089C84D /* RepeatingTimer.swift */; };
+		B1C297A824CF870B0089C84D /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C297A624CF870B0089C84D /* RepeatingTimer.swift */; };
+		B1C5576F24C0B59A009355F1 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5576E24C0B59A009355F1 /* Frame.swift */; };
+		B1C5577024C0B59A009355F1 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5576E24C0B59A009355F1 /* Frame.swift */; };
+		B1D0889024D1F1060001B8E9 /* CVPixelBuffer+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0888F24D1F1060001B8E9 /* CVPixelBuffer+Data.swift */; };
+		B1D0889124D1F1060001B8E9 /* CVPixelBuffer+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0888F24D1F1060001B8E9 /* CVPixelBuffer+Data.swift */; };
+		B1D0889324D1F75A0001B8E9 /* CIImage+Imago.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0889224D1F75A0001B8E9 /* CIImage+Imago.swift */; };
+		B1D0889624D221160001B8E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0889524D221160001B8E9 /* ViewController.swift */; };
+		B1DF8B7024BD7FDB007ED34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DF8B6E24BD7FDB007ED34C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B17748C724B03498007103FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17748A924B03497007103FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17748B024B03497007103FB;
+			remoteInfo = Imago;
+		};
+		B17748D224B03498007103FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17748A924B03497007103FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17748B024B03497007103FB;
+			remoteInfo = Imago;
+		};
+		B183883624DF377A007981BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17748A924B03497007103FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B111516B24BD621D009CA476;
+			remoteInfo = ImagoPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B17748EF24B035B5007103FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B17748F324B039B2007103FB /* EDSDK.framework in Embed Frameworks */,
+				B183886024E30615007981BB /* libturbojpeg.0.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B10F711B24BD323C008276A7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B111518324BD621D009CA476 /* ImagoPlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagoPlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B111518924BD630D009CA476 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B111518B24BD6758009CA476 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = ../Device.swift; sourceTree = "<group>"; };
+		B111518D24BD6758009CA476 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = ../Stream.swift; sourceTree = "<group>"; };
+		B111518E24BD6758009CA476 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = ../Main.swift; sourceTree = "<group>"; };
+		B111519024BD6758009CA476 /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = ../Plugin.swift; sourceTree = "<group>"; };
+		B111519124BD6758009CA476 /* PluginInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PluginInterface.swift; path = ../PluginInterface.swift; sourceTree = "<group>"; };
+		B111519224BD6758009CA476 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = ../Property.swift; sourceTree = "<group>"; };
+		B111519424BD6758009CA476 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Object.swift; path = ../Object.swift; sourceTree = "<group>"; };
+		B111519F24BD6B13009CA476 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B11151A024BD6B13009CA476 /* ImagoPlugin-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImagoPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		B142810F24B8C0CF00F50FCD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B1499C7624D1D9B300FC3557 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		B15B113524CB61B6002703FF /* PubSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubSub.swift; sourceTree = "<group>"; };
+		B17748B124B03497007103FB /* Imago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17748B424B03497007103FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B17748B624B03497007103FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B17748B824B03498007103FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B17748BB24B03498007103FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B17748C024B03498007103FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17748C124B03498007103FB /* Imago.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Imago.entitlements; sourceTree = "<group>"; };
+		B17748C624B03498007103FB /* ImagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17748CA24B03498007103FB /* ImagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagoTests.swift; sourceTree = "<group>"; };
+		B17748CC24B03498007103FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17748D124B03498007103FB /* ImagoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17748D524B03498007103FB /* ImagoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagoUITests.swift; sourceTree = "<group>"; };
+		B17748D724B03498007103FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17748E424B03542007103FB /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		B17748E924B0358F007103FB /* Imago-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Imago-Bridging-Header.h"; sourceTree = "<group>"; };
+		B17748EA24B03590007103FB /* Imago-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Imago-PrefixHeader.pch"; sourceTree = "<group>"; };
+		B17748F024B0390D007103FB /* EDSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EDSDK.framework; path = Frameworks/EDSDK/EDSDK.framework; sourceTree = "<group>"; };
+		B177491E24B0F9AF007103FB /* libturbojpeg.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libturbojpeg.0.2.0.dylib; path = Frameworks/libturbojpeg.0.2.0.dylib; sourceTree = "<group>"; };
+		B177492124B0FAD1007103FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B177492324B0FAE4007103FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B177492424B0FAE4007103FB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B177492524B0FAE4007103FB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B177492624B0FAE5007103FB /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+		B18149F124B61F86004CD8A8 /* CanonCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonCamera.swift; sourceTree = "<group>"; };
+		B18149F824B67E6D004CD8A8 /* CanonCommandErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonCommandErrors.swift; sourceTree = "<group>"; };
+		B18149FA24B68094004CD8A8 /* CanonCommandProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonCommandProperty.swift; sourceTree = "<group>"; };
+		B183883324DDC18E007981BB /* CameraFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilter.swift; sourceTree = "<group>"; };
+		B183884324E19A2B007981BB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B183884424E1A544007981BB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B183884524E1A829007981BB /* CVPixelBufferPool+Imago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBufferPool+Imago.swift"; sourceTree = "<group>"; };
+		B183884824E1B806007981BB /* TitlebarAccesory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlebarAccesory.swift; sourceTree = "<group>"; };
+		B183884B24E1B853007981BB /* CameraFilterMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterMenu.swift; sourceTree = "<group>"; };
+		B183884D24E1B8FB007981BB /* LivePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePreview.swift; sourceTree = "<group>"; };
+		B183885224E1BC07007981BB /* CIImage+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Filter.swift"; sourceTree = "<group>"; };
+		B183885624E1C340007981BB /* CameraRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRow.swift; sourceTree = "<group>"; };
+		B183885E24E30614007981BB /* libturbojpeg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libturbojpeg.0.dylib; path = Frameworks/libturbojpeg.0.dylib; sourceTree = "<group>"; };
+		B1B8AD0924C61E8F009470CA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		B1B8AD0E24C620C6009470CA /* DLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLog.swift; sourceTree = "<group>"; };
+		B1B8AD1124C621A4009470CA /* ImagoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagoStream.swift; path = ../Shared/ImagoStream.swift; sourceTree = "<group>"; };
+		B1B8AD4A24C756AE009470CA /* CallerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerID.swift; sourceTree = "<group>"; };
+		B1C297A624CF870B0089C84D /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		B1C5576E24C0B59A009355F1 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		B1C5577724C53AE7009355F1 /* Frame+Decompress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Frame+Decompress.swift"; sourceTree = "<group>"; };
+		B1C6F8A124B3F3D5009D98C0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B1D0888F24D1F1060001B8E9 /* CVPixelBuffer+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Data.swift"; sourceTree = "<group>"; };
+		B1D0889224D1F75A0001B8E9 /* CIImage+Imago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Imago.swift"; sourceTree = "<group>"; };
+		B1D0889524D221160001B8E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1DF8B6F24BD7FDB007ED34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B111517524BD621D009CA476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B111517624BD621D009CA476 /* Cocoa.framework in Frameworks */,
+				B111517724BD621D009CA476 /* CoreMedia.framework in Frameworks */,
+				B111517824BD621D009CA476 /* CoreImage.framework in Frameworks */,
+				B111517924BD621D009CA476 /* CoreGraphics.framework in Frameworks */,
+				B111517A24BD621D009CA476 /* AVFoundation.framework in Frameworks */,
+				B111517B24BD621D009CA476 /* CoreVideo.framework in Frameworks */,
+				B111517C24BD621D009CA476 /* CoreMediaIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748AE24B03497007103FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17748F224B039B2007103FB /* EDSDK.framework in Frameworks */,
+				B183885F24E30615007981BB /* libturbojpeg.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748C324B03498007103FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748CE24B03498007103FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B111518524BD6240009CA476 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B17748D424B03498007103FB /* ImagoUITests */,
+				B17748C924B03498007103FB /* ImagoTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B111518624BD6259009CA476 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				B111519E24BD6B13009CA476 /* Headers */,
+				B111518924BD630D009CA476 /* Info.plist */,
+				B1BD496124E34951000BD5C1 /* Base */,
+				B1B8AD1124C621A4009470CA /* ImagoStream.swift */,
+				B183884424E1A544007981BB /* LICENSE */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		B111519E24BD6B13009CA476 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B111519F24BD6B13009CA476 /* PrefixHeader.pch */,
+				B11151A024BD6B13009CA476 /* ImagoPlugin-Bridging-Header.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		B17748A824B03497007103FB = {
+			isa = PBXGroup;
+			children = (
+				B142810F24B8C0CF00F50FCD /* README.md */,
+				B183884324E19A2B007981BB /* LICENSE */,
+				B1B8AD0D24C620C6009470CA /* Shared */,
+				B17748B324B03497007103FB /* Imago */,
+				B111518624BD6259009CA476 /* Plugin */,
+				B17748B224B03497007103FB /* Products */,
+				B17748EB24B035B5007103FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B17748B224B03497007103FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B17748B124B03497007103FB /* Imago.app */,
+				B17748C624B03498007103FB /* ImagoTests.xctest */,
+				B17748D124B03498007103FB /* ImagoUITests.xctest */,
+				B111518324BD621D009CA476 /* ImagoPlugin.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B17748B324B03497007103FB /* Imago */ = {
+			isa = PBXGroup;
+			children = (
+				B17748C024B03498007103FB /* Info.plist */,
+				B1F0B10524B919FF00D9C1C1 /* Views */,
+				B17748B424B03497007103FB /* AppDelegate.swift */,
+				B1D0889524D221160001B8E9 /* ViewController.swift */,
+				B1499C7624D1D9B300FC3557 /* Stream.swift */,
+				B183885424E1BC1B007981BB /* Extensions */,
+				B183884F24E1BB10007981BB /* Camera */,
+				B1DF8B6C24BD7C29007ED34C /* Headers */,
+				B1DF8B6D24BD7C40007ED34C /* Assets */,
+				B17748BA24B03498007103FB /* Preview Content */,
+				B111518524BD6240009CA476 /* Tests */,
+			);
+			path = Imago;
+			sourceTree = "<group>";
+		};
+		B17748BA24B03498007103FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B17748BB24B03498007103FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B17748C924B03498007103FB /* ImagoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17748CA24B03498007103FB /* ImagoTests.swift */,
+				B17748CC24B03498007103FB /* Info.plist */,
+			);
+			path = ImagoTests;
+			sourceTree = "<group>";
+		};
+		B17748D424B03498007103FB /* ImagoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B17748D524B03498007103FB /* ImagoUITests.swift */,
+				B17748D724B03498007103FB /* Info.plist */,
+			);
+			path = ImagoUITests;
+			sourceTree = "<group>";
+		};
+		B17748EB24B035B5007103FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B183885E24E30614007981BB /* libturbojpeg.0.dylib */,
+				B10F711B24BD323C008276A7 /* CoreImage.framework */,
+				B1C6F8A124B3F3D5009D98C0 /* Cocoa.framework */,
+				B177492324B0FAE4007103FB /* CoreGraphics.framework */,
+				B177492524B0FAE4007103FB /* CoreMedia.framework */,
+				B177492624B0FAE5007103FB /* CoreMediaIO.framework */,
+				B177492424B0FAE4007103FB /* CoreVideo.framework */,
+				B177492124B0FAD1007103FB /* AVFoundation.framework */,
+				B177491E24B0F9AF007103FB /* libturbojpeg.0.2.0.dylib */,
+				B17748F024B0390D007103FB /* EDSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B18149F524B62003004CD8A8 /* Canon */ = {
+			isa = PBXGroup;
+			children = (
+				B18149F124B61F86004CD8A8 /* CanonCamera.swift */,
+				B18149F824B67E6D004CD8A8 /* CanonCommandErrors.swift */,
+				B18149FA24B68094004CD8A8 /* CanonCommandProperty.swift */,
+			);
+			path = Canon;
+			sourceTree = "<group>";
+		};
+		B183884F24E1BB10007981BB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B17748E424B03542007103FB /* Camera.swift */,
+				B183883324DDC18E007981BB /* CameraFilter.swift */,
+				B18149F524B62003004CD8A8 /* Canon */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B183885024E1BB67007981BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1D0888F24D1F1060001B8E9 /* CVPixelBuffer+Data.swift */,
+				B183884524E1A829007981BB /* CVPixelBufferPool+Imago.swift */,
+				B1D0889224D1F75A0001B8E9 /* CIImage+Imago.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B183885124E1BB80007981BB /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				B1B8AD4A24C756AE009470CA /* CallerID.swift */,
+				B15B113524CB61B6002703FF /* PubSub.swift */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
+		B183885424E1BC1B007981BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1C5577724C53AE7009355F1 /* Frame+Decompress.swift */,
+				B183885224E1BC07007981BB /* CIImage+Filter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B1B8AD0D24C620C6009470CA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B1B8AD0924C61E8F009470CA /* Const.swift */,
+				B1B8AD0E24C620C6009470CA /* DLog.swift */,
+				B1C5576E24C0B59A009355F1 /* Frame.swift */,
+				B1C297A624CF870B0089C84D /* RepeatingTimer.swift */,
+				B183885124E1BB80007981BB /* IPC */,
+				B183885024E1BB67007981BB /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B1BD496124E34951000BD5C1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B111518E24BD6758009CA476 /* Main.swift */,
+				B111519024BD6758009CA476 /* Plugin.swift */,
+				B111519124BD6758009CA476 /* PluginInterface.swift */,
+				B111518B24BD6758009CA476 /* Device.swift */,
+				B111519424BD6758009CA476 /* Object.swift */,
+				B111519224BD6758009CA476 /* Property.swift */,
+				B111518D24BD6758009CA476 /* Stream.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B1DF8B6C24BD7C29007ED34C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B17748E924B0358F007103FB /* Imago-Bridging-Header.h */,
+				B17748EA24B03590007103FB /* Imago-PrefixHeader.pch */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		B1DF8B6D24BD7C40007ED34C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B1DF8B6E24BD7FDB007ED34C /* Main.storyboard */,
+				B17748C124B03498007103FB /* Imago.entitlements */,
+				B17748B824B03498007103FB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B1F0B10524B919FF00D9C1C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B17748B624B03497007103FB /* ContentView.swift */,
+				B183885624E1C340007981BB /* CameraRow.swift */,
+				B183884B24E1B853007981BB /* CameraFilterMenu.swift */,
+				B183884824E1B806007981BB /* TitlebarAccesory.swift */,
+				B183884D24E1B8FB007981BB /* LivePreview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B111516B24BD621D009CA476 /* ImagoPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B111518024BD621D009CA476 /* Build configuration list for PBXNativeTarget "ImagoPlugin" */;
+			buildPhases = (
+				B111516C24BD621D009CA476 /* Sources */,
+				B111517524BD621D009CA476 /* Frameworks */,
+				B1DF8B6B24BD6E06007ED34C /* Copy Plugin to System */,
+				B145826924E31D010035723E /* Update Build Version */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImagoPlugin;
+			productName = "Imago DAL";
+			productReference = B111518324BD621D009CA476 /* ImagoPlugin.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B17748B024B03497007103FB /* Imago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17748DA24B03498007103FB /* Build configuration list for PBXNativeTarget "Imago" */;
+			buildPhases = (
+				B145826824E315360035723E /* Code Sign Nested Bundles in EDSDK.framework */,
+				B17748AD24B03497007103FB /* Sources */,
+				B17748AE24B03497007103FB /* Frameworks */,
+				B17748AF24B03497007103FB /* Resources */,
+				B17748EF24B035B5007103FB /* Embed Frameworks */,
+				B145826A24E31E180035723E /* Update Build Version */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B183883724DF377A007981BB /* PBXTargetDependency */,
+			);
+			name = Imago;
+			productName = Imago;
+			productReference = B17748B124B03497007103FB /* Imago.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B17748C524B03498007103FB /* ImagoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17748DD24B03498007103FB /* Build configuration list for PBXNativeTarget "ImagoTests" */;
+			buildPhases = (
+				B17748C224B03498007103FB /* Sources */,
+				B17748C324B03498007103FB /* Frameworks */,
+				B17748C424B03498007103FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17748C824B03498007103FB /* PBXTargetDependency */,
+			);
+			name = ImagoTests;
+			productName = ImagoTests;
+			productReference = B17748C624B03498007103FB /* ImagoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B17748D024B03498007103FB /* ImagoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17748E024B03498007103FB /* Build configuration list for PBXNativeTarget "ImagoUITests" */;
+			buildPhases = (
+				B17748CD24B03498007103FB /* Sources */,
+				B17748CE24B03498007103FB /* Frameworks */,
+				B17748CF24B03498007103FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17748D324B03498007103FB /* PBXTargetDependency */,
+			);
+			name = ImagoUITests;
+			productName = ImagoUITests;
+			productReference = B17748D124B03498007103FB /* ImagoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B17748A924B03497007103FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Nolan Brown";
+				TargetAttributes = {
+					B17748B024B03497007103FB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					B17748C524B03498007103FB = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = B17748B024B03497007103FB;
+					};
+					B17748D024B03498007103FB = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = B17748B024B03497007103FB;
+					};
+				};
+			};
+			buildConfigurationList = B17748AC24B03497007103FB /* Build configuration list for PBXProject "Imago" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B17748A824B03497007103FB;
+			productRefGroup = B17748B224B03497007103FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B17748B024B03497007103FB /* Imago */,
+				B111516B24BD621D009CA476 /* ImagoPlugin */,
+				B17748C524B03498007103FB /* ImagoTests */,
+				B17748D024B03498007103FB /* ImagoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B17748AF24B03497007103FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17748BC24B03498007103FB /* Preview Assets.xcassets in Resources */,
+				B17748B924B03498007103FB /* Assets.xcassets in Resources */,
+				B1DF8B7024BD7FDB007ED34C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748C424B03498007103FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748CF24B03498007103FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B145826824E315360035723E /* Code Sign Nested Bundles in EDSDK.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Code Sign Nested Bundles in EDSDK.framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nEDSDK_FRAMEWORK_PATH=$SRCROOT/Frameworks/EDSDK/EDSDK.framework\nEDSDK_CURRENT_VERSION_PATH=$EDSDK_FRAMEWORK_PATH/Versions/A\ncodesign -fs \"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" $EDSDK_CURRENT_VERSION_PATH/CHHLLite.bundle\ncodesign -fs \"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" $EDSDK_CURRENT_VERSION_PATH/EdsImage.bundle\n#codesign -fs \"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" $EDSDK_CURRENT_VERSION_PATH/EDSDK\n#codesign -fs \"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" $EDSDK_FRAMEWORK_PATH\n";
+		};
+		B145826924E31D010035723E /* Update Build Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Keep build version synced between App and Plugin\n\nAPP_PLIST=\"${PROJECT_DIR}/Imago/Info.plist\"\n\nSHORT_VERSION=$($PLB -c \"Print CFBundleShortVersionString\" \"$APP_PLIST\")\nBUILD_NUMBER=$($PLB -c \"Print CFBundleVersion\" \"$APP_PLIST\")\n\nPLUGIN_PLIST=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nPLB=/usr/libexec/PlistBuddy\n\n$PLB -c \"Set :CFBundleShortVersionString $SHORT_VERSION\" \"$PLUGIN_PLIST\"\n$PLB -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$PLUGIN_PLIST\"\n";
+		};
+		B145826A24E31E180035723E /* Update Build Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nAPP_PLIST=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n\nPLB=/usr/libexec/PlistBuddy\n\nLAST_NUMBER=$($PLB -c \"Print CFBundleVersion\" \"$APP_PLIST\")\nNEW_VERSION=$(($LAST_NUMBER + 1))\n$PLB -c \"Set :CFBundleVersion $NEW_VERSION\" \"$APP_PLIST\"\n\n";
+		};
+		B1DF8B6B24BD6E06007ED34C /* Copy Plugin to System */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Plugin to System";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION == \"Debug\" ];then\necho $(security find-generic-password -ga \"ImagoBuild\" -w) | sudo -S rm -R /Library/CoreMediaIO/Plug-Ins/DAL/$PRODUCT_NAME.plugin; \nsudo cp -R $SYMROOT/$CONFIGURATION/$PRODUCT_NAME.plugin /Library/CoreMediaIO/Plug-Ins/DAL/$PRODUCT_NAME.plugin\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B111516C24BD621D009CA476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B183885524E1BD63007981BB /* CIImage+Imago.swift in Sources */,
+				B111519B24BD6759009CA476 /* Property.swift in Sources */,
+				B111519A24BD6759009CA476 /* PluginInterface.swift in Sources */,
+				B111519724BD6759009CA476 /* Main.swift in Sources */,
+				B111519524BD6759009CA476 /* Device.swift in Sources */,
+				B1C297A824CF870B0089C84D /* RepeatingTimer.swift in Sources */,
+				B1B8AD1024C620C6009470CA /* DLog.swift in Sources */,
+				B111519924BD6759009CA476 /* Plugin.swift in Sources */,
+				B1B8AD1324C621A4009470CA /* ImagoStream.swift in Sources */,
+				B1B8AD4C24C756AE009470CA /* CallerID.swift in Sources */,
+				B183884724E1A82A007981BB /* CVPixelBufferPool+Imago.swift in Sources */,
+				B1B8AD0B24C61E9E009470CA /* Const.swift in Sources */,
+				B111519D24BD6759009CA476 /* Object.swift in Sources */,
+				B1C5577024C0B59A009355F1 /* Frame.swift in Sources */,
+				B15B113724CB61B6002703FF /* PubSub.swift in Sources */,
+				B1D0889124D1F1060001B8E9 /* CVPixelBuffer+Data.swift in Sources */,
+				B111519624BD6759009CA476 /* Stream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748AD24B03497007103FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C5576F24C0B59A009355F1 /* Frame.swift in Sources */,
+				B1C297A724CF870B0089C84D /* RepeatingTimer.swift in Sources */,
+				B17748E724B03542007103FB /* Camera.swift in Sources */,
+				B183885724E1C340007981BB /* CameraRow.swift in Sources */,
+				B15B113624CB61B6002703FF /* PubSub.swift in Sources */,
+				B1D0889024D1F1060001B8E9 /* CVPixelBuffer+Data.swift in Sources */,
+				B1D0889624D221160001B8E9 /* ViewController.swift in Sources */,
+				B18149F924B67E6E004CD8A8 /* CanonCommandErrors.swift in Sources */,
+				B17748B724B03497007103FB /* ContentView.swift in Sources */,
+				B1B8AD1424C64416009470CA /* Const.swift in Sources */,
+				B183884C24E1B853007981BB /* CameraFilterMenu.swift in Sources */,
+				B183884924E1B806007981BB /* TitlebarAccesory.swift in Sources */,
+				B1B8AD0824C61953009470CA /* Frame+Decompress.swift in Sources */,
+				B1B8AD4B24C756AE009470CA /* CallerID.swift in Sources */,
+				B183883424DDC18E007981BB /* CameraFilter.swift in Sources */,
+				B18149F224B61F86004CD8A8 /* CanonCamera.swift in Sources */,
+				B1B8AD0F24C620C6009470CA /* DLog.swift in Sources */,
+				B17748B524B03497007103FB /* AppDelegate.swift in Sources */,
+				B18149FB24B68094004CD8A8 /* CanonCommandProperty.swift in Sources */,
+				B1499C7724D1D9B300FC3557 /* Stream.swift in Sources */,
+				B183884E24E1B8FB007981BB /* LivePreview.swift in Sources */,
+				B1D0889324D1F75A0001B8E9 /* CIImage+Imago.swift in Sources */,
+				B183884624E1A829007981BB /* CVPixelBufferPool+Imago.swift in Sources */,
+				B183885324E1BC07007981BB /* CIImage+Filter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748C224B03498007103FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17748CB24B03498007103FB /* ImagoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17748CD24B03498007103FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17748D624B03498007103FB /* ImagoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B17748C824B03498007103FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17748B024B03497007103FB /* Imago */;
+			targetProxy = B17748C724B03498007103FB /* PBXContainerItemProxy */;
+		};
+		B17748D324B03498007103FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17748B024B03497007103FB /* Imago */;
+			targetProxy = B17748D224B03498007103FB /* PBXContainerItemProxy */;
+		};
+		B183883724DF377A007981BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B111516B24BD621D009CA476 /* ImagoPlugin */;
+			targetProxy = B183883624DF377A007981BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1DF8B6E24BD7FDB007ED34C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DF8B6F24BD7FDB007ED34C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B111518124BD621D009CA476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/EDSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = Plugin/Headers/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/EDSDK/Header",
+					"/opt/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = Plugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.Imago.Plugin;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Plugin/Headers/ImagoPlugin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		B111518224BD621D009CA476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/EDSDK",
+				);
+				GCC_PREFIX_HEADER = Plugin/Headers/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/EDSDK/Header",
+					"/opt/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = Plugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.Imago.Plugin;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Plugin/Headers/ImagoPlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		B17748D824B03498007103FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B17748D924B03498007103FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B17748DB24B03498007103FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Imago/Assets/Imago.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Imago/Preview Content\"";
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/EDSDK",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"IMAGO_APP=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/EDSDK/Header",
+					"/opt/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = Imago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.Imago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Imago/Headers/Imago-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B17748DC24B03498007103FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Imago/Assets/Imago.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Imago/Preview Content\"";
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/EDSDK",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "IMAGO_APP=1";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/EDSDK/Header",
+					"/opt/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = Imago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.Imago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Imago Mac App Provisioning Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "Imago/Headers/Imago-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B17748DE24B03498007103FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				INFOPLIST_FILE = ImagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.ImagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imago.app/Contents/MacOS/Imago";
+			};
+			name = Debug;
+		};
+		B17748DF24B03498007103FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				INFOPLIST_FILE = ImagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.ImagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imago.app/Contents/MacOS/Imago";
+			};
+			name = Release;
+		};
+		B17748E124B03498007103FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				INFOPLIST_FILE = ImagoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.ImagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Imago;
+			};
+			name = Debug;
+		};
+		B17748E224B03498007103FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9DCD34JNP6;
+				INFOPLIST_FILE = ImagoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nolanbrown.ImagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Imago;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B111518024BD621D009CA476 /* Build configuration list for PBXNativeTarget "ImagoPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B111518124BD621D009CA476 /* Debug */,
+				B111518224BD621D009CA476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17748AC24B03497007103FB /* Build configuration list for PBXProject "Imago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17748D824B03498007103FB /* Debug */,
+				B17748D924B03498007103FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17748DA24B03498007103FB /* Build configuration list for PBXNativeTarget "Imago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17748DB24B03498007103FB /* Debug */,
+				B17748DC24B03498007103FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17748DD24B03498007103FB /* Build configuration list for PBXNativeTarget "ImagoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17748DE24B03498007103FB /* Debug */,
+				B17748DF24B03498007103FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17748E024B03498007103FB /* Build configuration list for PBXNativeTarget "ImagoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17748E124B03498007103FB /* Debug */,
+				B17748E224B03498007103FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B17748A924B03497007103FB /* Project object */;
+}
