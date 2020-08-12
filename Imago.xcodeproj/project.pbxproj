@@ -617,7 +617,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Keep build version synced between App and Plugin\n\nAPP_PLIST=\"${PROJECT_DIR}/Imago/Info.plist\"\n\nSHORT_VERSION=$($PLB -c \"Print CFBundleShortVersionString\" \"$APP_PLIST\")\nBUILD_NUMBER=$($PLB -c \"Print CFBundleVersion\" \"$APP_PLIST\")\n\nPLUGIN_PLIST=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nPLB=/usr/libexec/PlistBuddy\n\n$PLB -c \"Set :CFBundleShortVersionString $SHORT_VERSION\" \"$PLUGIN_PLIST\"\n$PLB -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$PLUGIN_PLIST\"\n";
+			shellScript = "# Keep build version synced between App and Plugin\n\nAPP_PLIST=\"${PROJECT_DIR}/Imago/Info.plist\"\nPLB=/usr/libexec/PlistBuddy\n\nSHORT_VERSION=$($PLB -c \"Print CFBundleShortVersionString\" \"$APP_PLIST\")\nBUILD_NUMBER=$($PLB -c \"Print CFBundleVersion\" \"$APP_PLIST\")\n\nPLUGIN_PLIST=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n\n$PLB -c \"Set :CFBundleShortVersionString $SHORT_VERSION\" \"$PLUGIN_PLIST\"\n$PLB -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$PLUGIN_PLIST\"\n";
 		};
 		B145826A24E31E180035723E /* Update Build Version */ = {
 			isa = PBXShellScriptBuildPhase;
